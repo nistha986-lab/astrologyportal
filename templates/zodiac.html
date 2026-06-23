@@ -1,0 +1,42 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card text-center">
+
+    <h1 class="display-4">
+        ♊ {{ sign }}
+    </h1>
+
+    <hr>
+
+    <h3>
+        🌍 Element: {{ data.element }}
+    </h3>
+
+    <h3>
+        🪐 Planet: {{ data.planet }}
+    </h3>
+
+    <br>
+
+    <p>
+        <strong>Strengths:</strong>
+        {{ data.strength }}
+    </p>
+
+    <p>
+        <strong>Weaknesses:</strong>
+        {{ data.weakness }}
+    </p>
+
+    <a href="/forecast"
+       class="btn btn-primary">
+        Next →
+    </a>
+
+</div>
+
+{% endblock %}
+

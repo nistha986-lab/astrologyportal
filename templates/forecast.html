@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card">
+
+    <h1 style="text-align:center; color:#ff4fd8;">
+        🔮 Your 24-Hour Forecast
+    </h1>
+
+    <br>
+
+    <div class="info-box">
+
+        <h3>✨ Cosmic Guidance</h3>
+
+        <p style="font-size:18px; line-height:1.8;">
+            {{ horoscope }}
+        </p>
+
+    </div>
+
+    <br>
+
+    <div class="dashboard-grid">
+
+        <div class="dashboard-item">
+            ❤️ Love
+            <br><br>
+            ⭐⭐⭐⭐☆
+        </div>
+
+        <div class="dashboard-item">
+            💼 Career
+            <br><br>
+            ⭐⭐⭐⭐⭐
+        </div>
+
+        <div class="dashboard-item">
+            💰 Finance
+            <br><br>
+            ⭐⭐⭐⭐☆
+        </div>
+
+        <div class="dashboard-item">
+            🏥 Health
+            <br><br>
+            ⭐⭐⭐☆☆
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div style="text-align:center">
+
+        <a href="/future" class="btn">
+            View Future Insights →
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}

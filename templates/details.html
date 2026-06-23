@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Details</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+
+<form method="POST">
+
+<input
+type="text"
+name="name"
+placeholder="Name"
+required>
+
+<input
+type="date"
+name="dob"
+required>
+
+<input
+type="submit"
+value="Generate Report">
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+```html
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card">
+
+    <h1 style="text-align:center; color:#ffca28;">
+        🌟 Lucky Dashboard
+    </h1>
+
+    <br>
+
+    <div class="dashboard-grid">
+
+        <div class="dashboard-item">
+            <h3>🔢 Lucky Number</h3>
+            <h2>{{ lucky.number }}</h2>
+        </div>
+
+        <div class="dashboard-item">
+            <h3>🎨 Lucky Color</h3>
+            <h2>{{ lucky.color }}</h2>
+        </div>
+
+        <div class="dashboard-item">
+            <h3>📅 Lucky Day</h3>
+            <h2>{{ lucky.day }}</h2>
+        </div>
+
+        <div class="dashboard-item">
+            <h3>💎 Lucky Gemstone</h3>
+            <h2>{{ lucky.gemstone }}</h2>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="info-box">
+
+        <h3>✨ Compatibility</h3>
+
+        <p>
+            Best compatibility with:
+            Libra • Gemini • Aquarius
+        </p>
+
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+
+        <a href="/download" class="btn">
+            📄 Download PDF Report
+        </a>
+
+        <a href="/history" class="btn">
+            📚 View History
+        </a>
+
+        <a href="/" class="btn">
+            🏠 Home
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}
+```
